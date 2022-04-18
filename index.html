@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- CSS  -->
+  <link rel="stylesheet" href="Style/style.css">
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="Script/script.js" defer></script>
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="flex main-margin">
+    <section class="container">
+      <h3 class="container__header">Learn to code by watching others</h3>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+    <section>
+      <div class="btn-free"><p class="btn-free-paragraph"><b>Try it free 7 days</b> then $20/mo. thereafter</p></div>
+      <div class="form-container">
+        <div class="form flex flex-column">
+          <div class="box box-border" id="first" ><input type="text" placeholder="First Name" ></input></div>
+          <div class="box box-border"id="second"><input type="text" placeholder="Last Name"></input></div>
+          <div class="box box-border"id="third"><input type="email" placeholder="Email Address" ></input></div>
+          <div class="box box-border"id="fourth"><input type="password" placeholder="Password" ></input></div>
+          <button class="box box-bg-green box-text">Claim your free trial</button>
+          <p class="footer ">By clicking the button, you are agreeing to our <span class="footer-orange">Terms and Services</span></p>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>
