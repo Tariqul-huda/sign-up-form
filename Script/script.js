@@ -98,7 +98,7 @@ button.addEventListener("click",e=>{
     if(isClick){
         if(!form.firstName){
             input[0].classList.add("box-border-error")
-            createElement("First name cannot be empty",1,true)
+            createElement("First Name cannot be empty",1,true)
         }
         if(!form.lastName){
             input[1].classList.add("box-border-error")
@@ -106,7 +106,7 @@ button.addEventListener("click",e=>{
         }
         if(!ValidateEmail(form.email)){
             input[2].classList.add("box-border-error")
-            createElement("Email is Invalid",3,true)
+            createElement("Looks like this is not an email",3,true)
         }
         if(!form.password){
             input[3].classList.add("box-border-error")
