@@ -1,6 +1,8 @@
 const input = document.querySelectorAll(".box");
-
 let value =0;
+let isTrue=true;
+
+
 const button = document.getElementsByClassName("box-bg-green")[0]
 let form ={
     firstName:'',
@@ -13,8 +15,21 @@ function addBorderOutline(item){
     item.childNodes[0].focus();
     value = event.currentTarget.id;
     item.classList.add("box-border-focus");
+    if(item.classList.contains('box-border-error')){
+        removeErrorBorder();
+    }
     remvoeBorderOutline(input);
 
+}
+function createElement(){
+    if(isTrue){
+        let parent = document.getElementsByClassName('form')[0]
+        let er = document.createElement("p");
+        er.classList.add("input-error")
+         er.textContent="Hello"
+         parent.insertBefore(er,input[1])
+         isTrue= false;
+    }
 }
 function isIdMatch(item){
     if(item.id!==value){
@@ -32,6 +47,19 @@ function remvoeBorderOutline(list){
 function removeAllBorder(){
     for(let i=0;i<4;i++){
         input[i].classList.remove('box-border-focus')
+    }
+}
+function ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+    return (true)
+  }
+    return (false)
+}
+function removeErrorBorder(){
+    for(let i of input){
+        i.classList.remove('box-border-error')
     }
 }
 input.forEach(item=>{
@@ -53,10 +81,16 @@ button.addEventListener("click",e=>{
     input[3].childNodes[0].addEventListener("input",e=>{
         form.password=e.target.value;
     })
-    
-    input.forEach(item=>{
-        item.childNodes[0].value='';
-    })
+    if(!form.firstName){
+        input[0].classList.add("box-border-error")
+        createElement()
+        
+    }
+    if(!form.lastName){input[1].classList.add("box-border-error")}
+    if(!form.email){input[2].classList.add("box-border-error")}
+    if(!ValidateEmail(form.email)){input[2].classList.add("box-border-error")}
+    if(!form.password){input[3].classList.add("box-border-error")}
+
     removeAllBorder();
 })
 document.addEventListener('click',e=>{
@@ -66,3 +100,4 @@ document.addEventListener('click',e=>{
         }
         }
 })
+        // input[0].appendChild(do);
