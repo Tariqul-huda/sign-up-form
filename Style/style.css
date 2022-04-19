@@ -14,7 +14,7 @@ html{
     box-sizing: border-box;
 }
 body{
-    background:url(/images/bg-intro-desktop.png);
+    background:url(https://raw.githubusercontent.com/Tariqul-huda/sign-up-form/5862937ccd28a02cb9c53e0eb9e96021ca7baf0f/images/bg-intro-desktop.png);
     background-color: var(--color-primary-red);
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -171,7 +171,7 @@ button:active{
     }
     body {
         min-height: 100vh;
-        background:url(../images/bg-intro-mobile.png);
+        background:url(https://raw.githubusercontent.com/Tariqul-huda/sign-up-form/5862937ccd28a02cb9c53e0eb9e96021ca7baf0f/images/bg-intro-mobile.png);
         background-color: var(--color-primary-red);
 
     }
