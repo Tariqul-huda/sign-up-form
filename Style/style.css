@@ -171,6 +171,9 @@ button:active{
     }
     body {
         min-height: 100vh;
+        background:url(../images/bg-intro-mobile.png);
+        background-color: var(--color-primary-red);
+
     }
     .flex-row{
         flex-direction: column;
