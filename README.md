@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://tariqul-huda.github.io/sign-up-form/)
 
 ## My process
 At first I did the html file for desktop. I tried to use HTML5. Then, I did the styling and then some coding to add functionality. 
