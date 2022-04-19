@@ -100,7 +100,9 @@ button:active{
     cursor: text;
 }
 .box-border{
-    border:1px solid rgba(0, 0, 0, 0.1)
+    border:1px solid rgba(0, 0, 0, 0.1);
+    transition: .3s;
+
 
 }
 .box-border-focus{
@@ -154,5 +156,56 @@ button:active{
     color: var(--color-primary-red);
     margin: 0px 0px 0.5px 0px;
     text-align: right;
+    font-size: 14px;
     
+}
+.input-error-icon{
+    float: right;
+    position: relative;
+    bottom:35px;
+    right:24px
+}
+@media  screen and (max-width:500px) {
+    html {
+        height: 100%;
+    }
+    body {
+        min-height: 100vh;
+    }
+    .flex-row{
+        flex-direction: column;
+    }
+    .main-container{
+        width: 324px;
+        height:auto;
+        margin:180px auto;
+    }
+    .container{
+        position: unset;
+        max-width: 315px;
+        min-width: 315px;
+
+    }
+    .btn-free{
+        height: 85px;
+    }
+    .box{
+        width:280px;
+    }
+    input{
+        width:240px;
+    }
+    .form-container{
+        width:324px;
+    }
+    .form{
+        width:278px
+    }
+    .container__paragraph{
+        text-align: center;
+    }
+    .container__header{
+        font-size: 2.3rem;
+        text-align: center;
+    }
 }
