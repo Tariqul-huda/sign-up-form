@@ -74,7 +74,6 @@ function removeErrorBorder(){
         i.classList.remove('box-border-error')
     }
 }
-function getForm(){
         input[0].childNodes[0].addEventListener("input",e=>{
         form.firstName=e.currentTarget.value;
     })
@@ -87,7 +86,7 @@ function getForm(){
     input[3].childNodes[0].addEventListener("input",e=>{
         form.password=e.target.value;
     })
-}
+
 input.forEach(item=>{
     if(!item.classList.contains("box-bg-green")){
         item.addEventListener("click",addBorderOutline.bind(this,item))
@@ -95,7 +94,6 @@ input.forEach(item=>{
 })
 
 button.addEventListener("click",e=>{
-    getForm();
         
     if(isClick){
         if(!form.firstName){
