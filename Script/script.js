@@ -74,14 +74,8 @@ function removeErrorBorder(){
         i.classList.remove('box-border-error')
     }
 }
-input.forEach(item=>{
-    if(!item.classList.contains("box-bg-green")){
-        item.addEventListener("click",addBorderOutline.bind(this,item))
-    }
-})
-
-button.addEventListener("click",e=>{
-    input[0].childNodes[0].addEventListener("input",e=>{
+function getForm(){
+        input[0].childNodes[0].addEventListener("input",e=>{
         form.firstName=e.currentTarget.value;
     })
     input[1].childNodes[0].addEventListener("input",e=>{
@@ -93,7 +87,15 @@ button.addEventListener("click",e=>{
     input[3].childNodes[0].addEventListener("input",e=>{
         form.password=e.target.value;
     })
+}
+input.forEach(item=>{
+    if(!item.classList.contains("box-bg-green")){
+        item.addEventListener("click",addBorderOutline.bind(this,item))
+    }
+})
 
+button.addEventListener("click",e=>{
+    getForm();
         
     if(isClick){
         if(!form.firstName){
