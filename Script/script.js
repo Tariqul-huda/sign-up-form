@@ -64,6 +64,7 @@ function ValidateEmail(mail)
 }
 function removeErrorBorder(){
     isClick=true;
+    isTrue= true;
         let errorMsg = document.getElementsByClassName('input-error');
         let errorIcon = document.getElementsByClassName("input-error-icon");
         while(errorMsg.length!==0){
